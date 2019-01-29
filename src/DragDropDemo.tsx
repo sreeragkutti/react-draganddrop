@@ -81,8 +81,7 @@ export default class DragDropDemo extends React.Component{
         
     }
     render(){
-        console.log("CL-->",this.state.CompletedList)
-        console.log("WIP-->",this.state.WorkInProgress)
+       
 
         var Task:any = {
             WIP:[],
@@ -102,11 +101,11 @@ export default class DragDropDemo extends React.Component{
         });
 
         var completed_list = this.state.CompletedList.map(m=>{
-            return <li>{m}</li>;
+            return m;
         })
 
         var work_inProgress = this.state.WorkInProgress.map(m=>{
-            return <li>{m}</li>;
+            return m;
         })
 
         return(
@@ -128,16 +127,16 @@ export default class DragDropDemo extends React.Component{
                 </div>
                 <div className="list-data">
                         <h5>Completed list</h5>
-                        <ul>
+                        
                             { completed_list }
-                        </ul>
+                        
                         
                 </div>
                 <div className="list-data">
                         <h5>Work inprogress</h5>
-                        <ul>
+                        
                             { work_inProgress }
-                        </ul>
+                        
                         
                 </div>
             </div>

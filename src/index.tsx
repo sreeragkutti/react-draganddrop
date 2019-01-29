@@ -11,3 +11,9 @@ ReactDOM.render(<DragDropDemo />, document.getElementById('root'));
 // unregister() to register() below. Note this comes with some pitfalls.
 // Learn more about service workers: http://bit.ly/CRA-PWA
 serviceWorker.unregister();
+
+
+
+// npm run build 
+// npm install -g serve  
+// serve -s build 
